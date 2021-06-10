@@ -8,4 +8,4 @@ steps:
     commands:
       - docker build .
     volumes:
-      - /var/run/docer.sock:/var/run/docker.sock
+      - '/var/run/docer.sock:/var/run/docker.sock'
