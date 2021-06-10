@@ -3,9 +3,9 @@ type: docker
 name: default
 
 steps:
-  - name: build
-    image: docker
-    commands:
-      - docker build .
-    volumes:
-      - '/var/run/docer.sock:/var/run/docker.sock'
+  - name: build docker image
+    image: plugins/docker
+    settings:
+      repo: kunish/blog
+      auto_tag: true
+      dry_run: true
