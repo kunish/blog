@@ -18,8 +18,7 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve --host 0.0.0.0 --port 80",
-    "clean": "gatsby clean",
-    "format": "prettier --write content/posts/**.mdx"
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "gatsby": "^3.6.2",
