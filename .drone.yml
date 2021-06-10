@@ -1,20 +1,14 @@
 kind: pipline
 type: docker
 name: default
-platform:
-  os: linux
-  arch: amd64
 
 steps:
-  - name: build source code
-    image: node
-    commands:
-      - npm ci
-      - npm run build
-
-  # - name: build docker image
-  #   image: plugins/docker
-  #   settings:
-  #     repo: kunish/blog
-  #     auto_tag: true
-  #     dry_run: true
+  - name: deploy docker image
+    image: plugins/docker
+    settings:
+      repo: kunish/blog
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      auto_tag: true
