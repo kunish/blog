@@ -14,6 +14,6 @@ jobs:
 
       - name: build and deploy
         run: |
-        echo ${{ secrets.DOCKER_PASSWORD }} | docker login docker.io -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-        docker build . --file Dockerfile -tag kunish/blog
-        docker push kunish/blog
+          echo ${{ secrets.DOCKER_PASSWORD }} | docker login docker.io -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+          docker build . --file Dockerfile -tag kunish/blog
+          docker push kunish/blog
