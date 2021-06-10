@@ -9,7 +9,7 @@
   "homepage": "https://blog.shikun.info",
   "repository": {
     "type": "git",
-    "url": "https://gitea.shikun.info/shikun/blog"
+    "url": "https://github.com/kunish/blog"
   },
   "license": "MIT",
   "author": "shikun",
