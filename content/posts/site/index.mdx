@@ -1,0 +1,147 @@
+---
+title: 该网站是如何搭建的
+date: 2021-06-11
+---
+
+源码地址：https://gitea.shikun.info:shikun/blog.git
+
+# 准备工作
+
+首先全局安装`gatsby-cli`
+
+```bash
+npm install -g gatsby-cli
+```
+
+# 初始化
+
+使用`gatsby-cli`新建一个项目，名为`blog`，并使用`git`管理版本
+
+```bash
+gatsby new blog
+cd $_
+git init
+git remote add origin git@gitea.shikun.info:shikun/blog.git
+```
+
+添加`LICENSE`文件
+
+```bash
+npx license MIT --name shikun --year $(date +%Y)
+```
+
+# 添加必要的依赖
+
+使用`prettier`格式化
+
+```bash
+npm install gatsby-theme-blog
+npm install prettier -D
+```
+
+# 配置
+
+配置`gatsby`
+
+```bash
+cat > gatsby-config.js << EOF
+module.exports = {
+  siteMetadata: {
+    title: 'shikun',
+    siteUrl: 'https://blog.shikun.info',
+    description: "That's me",
+    author: 'shikun',
+    social: [
+      {
+        name: 'Github',
+        url: 'https://github.com/kunish',
+      },
+    ],
+  },
+  plugins: ['gatsby-theme-blog'],
+}
+EOF
+```
+
+配置`prettier`
+
+```bash
+cat > .prettierrc.yml << EOF
+semi: false
+singleQuote: true
+EOF
+
+npm set-script format "prettier --write content/posts/**.mdx"
+```
+
+# 开发
+
+启动项目，并通过浏览器打开
+
+```bash
+npm start
+open http://localhost:8000
+```
+
+第一个 blog
+
+```bash
+cat > content/posts/helloworld.mdx << EOF
+---
+title: Hello World
+date: $(date +%Y-%m-%d)
+---
+
+# Hello World
+
+This is your first `website` page!
+EOF
+```
+
+# 部署
+
+忽略不需要的文件
+
+```bash
+cat > .dockerignore << EOF
+node_modules/
+.cache/
+public
+EOF
+```
+
+准备`Dockerfile`
+
+```bash
+cat > Dockerfile << EOF
+FROM node:14
+
+WORKDIR /srv
+
+COPY . .
+
+EXPOSE 80
+
+RUN npm ci
+RUN npm run build
+
+CMD [ "npm", "run", "serve" ]
+EOF
+```
+
+准备`docker-compose.yml`
+
+```bash
+cat > docker-compose.yml << EOF
+version: '3'
+services:
+  blog:
+    build: .
+    container_name: blog
+    restart: always
+    ports:
+      - 80:80
+EOF
+```
+
+docker build .

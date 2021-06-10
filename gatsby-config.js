@@ -1,13 +1,15 @@
 module.exports = {
-  plugins: [
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: `${__dirname}/src/pages`,
+  siteMetadata: {
+    title: 'shikun',
+    siteUrl: 'https://blog.shikun.info',
+    description: "That's me",
+    author: 'shikun',
+    social: [
+      {
+        name: 'Github',
+        url: 'https://github.com/kunish',
       },
-    },
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sass",
-  ],
-};
+    ],
+  },
+  plugins: ['gatsby-theme-blog'],
+}
