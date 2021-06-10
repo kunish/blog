@@ -7,6 +7,18 @@ on:
     branches: [main]
 
 jobs:
+  version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v2
+
+      - name: bump up version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm ci
+          npx semantic-release
+
   deploy:
     runs-on: ubuntu-latest
     steps:
