@@ -7,7 +7,7 @@ platform:
 
 steps:
   - name: build source code
-    image: node:14
+    image: node
     commands:
       - npm ci
       - npm run build
