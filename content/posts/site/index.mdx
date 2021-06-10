@@ -3,7 +3,7 @@ title: 该网站是如何搭建的
 date: 2021-06-11
 ---
 
-源码地址：https://gitea.shikun.info:shikun/blog.git
+源码地址：https://gitea.shikun.info:shikun/blog
 
 # 准备工作
 
@@ -19,7 +19,9 @@ npm install -g gatsby-cli
 
 ```bash
 gatsby new blog
-cd $_
+
+cd blog
+
 git init
 git remote add origin git@gitea.shikun.info:shikun/blog.git
 ```
@@ -144,4 +146,16 @@ services:
 EOF
 ```
 
-docker build .
+# 插电开机
+
+启动
+
+```bash
+docker-compose up -d
+```
+
+访问
+
+```bash
+open http://localhost
+```
