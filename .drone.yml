@@ -9,9 +9,9 @@ steps:
       - npm ci
       - npm run build
 
-  - name: build docker image
-    image: plugins/docker
-    settings:
-      repo: kunish/blog
-      auto_tag: true
-      dry_run: true
+  # - name: build docker image
+  #   image: plugins/docker
+  #   settings:
+  #     repo: kunish/blog
+  #     auto_tag: true
+  #     dry_run: true
