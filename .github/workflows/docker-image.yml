@@ -12,6 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: cleanup
+        run: |
+          echo -n > .npmrc
+
       - uses: docker/setup-buildx-action@v1
         with:
           install: true
