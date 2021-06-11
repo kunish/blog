@@ -6,8 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+concurrency: single
+
 jobs:
   version:
+    concurrency: single
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,6 +27,7 @@ jobs:
           npx semantic-release
 
   deploy:
+    concurrency: single
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
