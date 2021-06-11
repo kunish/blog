@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/kunish/blog/compare/v1.2.0...v1.3.0) (2021-06-11)
+
+
+### Features
+
+* add the ability to go back home page ([b62b3dd](https://github.com/kunish/blog/commit/b62b3dd5b2116d5945184d1706e618261a12a17e))
+
 # [1.2.0](https://github.com/kunish/blog/compare/v1.1.0...v1.2.0) (2021-06-11)
 
 
