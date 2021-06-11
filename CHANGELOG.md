@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/kunish/blog/compare/v1.1.0...v1.2.0) (2021-06-11)
+
+
+### Features
+
+* escape special character ([0354599](https://github.com/kunish/blog/commit/0354599a8610da81a0b2e8b363807db190ca6f3c))
+
 # [1.1.0](https://github.com/kunish/blog/compare/v1.0.0...v1.1.0) (2021-06-11)
 
 
