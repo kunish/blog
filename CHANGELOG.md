@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/kunish/blog/compare/v1.0.0...v1.1.0) (2021-06-11)
+
+
+### Features
+
+* add posts ([bb5512d](https://github.com/kunish/blog/commit/bb5512db8a48de42ee7057eb8dcba27e0df443e9))
+
 # 1.0.0 (2021-06-10)
 
 
