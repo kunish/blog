@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/kunish/blog/compare/v1.3.0...v1.3.1) (2021-06-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency theme-ui to ^0.9.0 ([f42c3e4](https://github.com/kunish/blog/commit/f42c3e4217b2cf38f4778cdddb6a5b375a035020))
+
 # [1.3.0](https://github.com/kunish/blog/compare/v1.2.0...v1.3.0) (2021-06-11)
 
 
