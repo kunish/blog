@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/kunish/blog/compare/v1.5.0...v1.6.0) (2021-06-15)
+
+
+### Features
+
+* add gitlab-docker-compose ([b2e2494](https://github.com/kunish/blog/commit/b2e249400c58b55a9e196afa847d62c9062e9652))
+* add gitlab-docker-compose ([79f4ff9](https://github.com/kunish/blog/commit/79f4ff9d7b3d033e5a765f7999dafa212e7e84e4))
+* add nginx-proxy-manager-docker-compose ([c20d44a](https://github.com/kunish/blog/commit/c20d44a41f50eb9dcba37fb13ac85f4bb2b426b6))
+
 # [1.5.0](https://github.com/kunish/blog/compare/v1.4.0...v1.5.0) (2021-06-15)
 
 
