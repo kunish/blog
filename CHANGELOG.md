@@ -1,3 +1,23 @@
+# [1.5.0](https://github.com/kunish/blog/compare/v1.4.0...v1.5.0) (2021-06-15)
+
+
+### Features
+
+* add gitlab-docker-compose ([2051b76](https://github.com/kunish/blog/commit/2051b7672575768f20024fbed998012b1d80032c))
+* add gitlab-docker-compose ([030f7be](https://github.com/kunish/blog/commit/030f7be3465f03f09d9f69fd91439c2dc4f26f0a))
+
+# [1.4.0](https://github.com/kunish/blog/compare/v1.3.1...v1.4.0) (2021-06-11)
+
+
+### Features
+
+* add the ability to go back home page ([02b36a4](https://github.com/kunish/blog/commit/02b36a4912d98cfd40b4dc0abcb7a914bd839944))
+
+
+### Reverts
+
+* regreat to use concurrency ([e54db10](https://github.com/kunish/blog/commit/e54db10625aa8142247f1f43bff7f82f6ace238a))
+
 ## [1.3.1](https://github.com/kunish/blog/compare/v1.3.0...v1.3.1) (2021-06-11)
 
 
