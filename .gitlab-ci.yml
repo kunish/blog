@@ -1,0 +1,9 @@
+image: node
+
+build:
+  script:
+    - npm ci
+    - npm build
+  only:
+    - main
+    - dev
