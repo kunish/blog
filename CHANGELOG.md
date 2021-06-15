@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/kunish/blog/compare/v1.4.0...v1.5.0) (2021-06-15)
+
+
+### Features
+
+* add gitlab-docker-compose ([2051b76](https://github.com/kunish/blog/commit/2051b7672575768f20024fbed998012b1d80032c))
+* add gitlab-docker-compose ([030f7be](https://github.com/kunish/blog/commit/030f7be3465f03f09d9f69fd91439c2dc4f26f0a))
+
 # [1.4.0](https://github.com/kunish/blog/compare/v1.3.1...v1.4.0) (2021-06-11)
 
 
