@@ -20,8 +20,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          npm ci
-          npx semantic-release
+          yarn
+          yarn semantic-release
 
   deploy:
     runs-on: ubuntu-latest

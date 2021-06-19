@@ -2,8 +2,8 @@ image: node:14
 
 build:
   script:
-    - npm ci
-    - npm build
+    - yarn
+    - yarn build
   only:
     - main
     - dev

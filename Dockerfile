@@ -6,7 +6,7 @@ COPY . .
 
 EXPOSE 80
 
-RUN npm ci
-RUN npm run build
+RUN yarn
+RUN yarn build
 
-CMD [ "npm", "run", "serve" ]
+CMD [ "yarn", "serve" ]
