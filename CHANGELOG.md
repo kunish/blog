@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/kunish/blog/compare/v1.6.1...v1.7.0) (2021-06-20)
+
+
+### Features
+
+* **post:** pve-vm-resize-disk ([ad24f4f](https://github.com/kunish/blog/commit/ad24f4f760fc1076853140b32aace8a02f6064ae))
+
 ## [1.6.1](https://github.com/kunish/blog/compare/v1.6.0...v1.6.1) (2021-06-19)
 
 
